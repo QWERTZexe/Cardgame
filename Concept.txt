@@ -1,0 +1,63 @@
+# CARD GAME CONCEPT
+
+At first i had to think whether i want to make a card game using traditional card sets (with 4 diff colors, Ace 2 3 4 5 6 7 8 9 10 J D K Ace) or whether i want to make my own set (like pokemon for example).
+
+For this game, i have decided to make a mix of them. The original set from 2 to Ace will stay, but instead of the 4 classical colors, i decided to make season themed colors: winter, spring, summer and fall)
+
+The next idea was to make the design a japanese design, so it looks more original.
+
+For anyone not being able to read japanese:
+
+二 = 2
+三 = 3
+四 = 4
+五 = 5
+六 = 6
+七 = 7
+八 = 8
+九 = 9
+十 = 10
+
+Special cards
+
+王 = King
+妃 = Queen
+ジャック = Jack
+エース = Ace
+
+now it was time to design the cards!
+
+I made a generator in python so i can easily change the designs on the go.
+
+After designing, i had to think of a use case.
+
+After some thinking, i got this idea:
+
+There are 2 decks, so each color each card 2 times, so 13*4*2 = 104
+
+4 Players taking turns, multiple rounds. Its like a mix of mahjong and classic poker:
+Every person starts with 9 cards, and the goal is to get a nice hand, and when a player wants to cash out his nice hand, the round ends, and the person who got the nice hand gets points (if other people had nice hands but didnt cash out, they get their points as well). If multiple nice hand rules would apply, only the one with the most points counts. The points depend on how difficult the nice hand was. A list of nice hands can be found below.
+
+Each turn, you need to draw one card, then give one back into the middle, the middle is like an abyss, anyone can take from there when its their turn, but if someone takes from there instead of drawing, they need to take 2 and throw 2 into the abyss, not just one.
+
+When no cards are remaining, the game will continue for as long as one person cashes out. (Only middle-taking will work then).
+
+
+Points | Nice hands
+-------------------
+5      | Only 2 colors
+5      | No Special cards
+20     | Only Special cards
+30     | Full house
+40     | Only 1 color
+40     | 5 Card Straight + 4 Card Straight
+60     | 9-Straight
+60     | Big full house (4 of a kind + 3 of a kind)
+150    | Straight in only 1 color
+
+There is no set amount of rounds to be played, but default is 10.
+
+This is a very small list of nice hands, feel free to add more while playing!
+
+
+(C) Copyright 2025, QWERTZ_EXE, all rights reserved
